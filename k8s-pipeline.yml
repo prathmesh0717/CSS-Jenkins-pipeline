@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: css-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: pipeline-tag
+  template:
+    metadata:
+      name: my-css
+      labels:
+        name: pipeline-tag
+    spec: 
+      containers:
+      - name: docker-jenkins
+        image: prathmesh72/css     #DockerHub_Image
+        ports:
+        - containerPort: 80
+          protocol: TCP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: css-service
+spec:
+  selector:
+    name: pipeline-tag      #This tag should match the labels in the deployment
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+    protocol: TCP
+  type: LoadBalancer
