@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('code-check') {
             steps {
-               git branch: 'main', url: 'https://github.com/prathmeshkaral/CSS-Jenkins-pipeline.git'
+               git branch: 'main', url: 'https://github.com/prathmeshkaral/CSS-Jenkins-pipeline.git'    #Mention your Github_Repository
             }
         }
         stage('Docker-build') {
