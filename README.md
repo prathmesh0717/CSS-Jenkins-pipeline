@@ -231,11 +231,14 @@ This command updates the docker-jenkins container image in the <css-deployment> 
 ### After successfully uploaded all the files on GitHub Repository, and created job/item on jenkins GUI, 
 #### Hit the > Build Now
 ## You will get result of Build stages:
-![Build stage Result](result-images/build-stages.png)
+![Build stage Result]![image](https://github.com/user-attachments/assets/a376be89-442f-4892-8f41-1763c3d0d6f7)
+
 #
 ## Get the DNS of LoadBalancer from jenkins Terminal/EC2(LoadBalancer):
-![COPY DNS of LB](result-images/LoadBalancer-DNS.png)
+![COPY DNS of LB]![image](https://github.com/user-attachments/assets/51166864-0521-4824-9275-d7383b4476b6)
+
 #
 ## Hit the DNS on Browser to watch Deployed Application:
-![Final Result of Deployed CSS Template](result-images/DevOps-pipeline-result.png)
+![Final Result of Deployed CSS Template![image](https://github.com/user-attachments/assets/6efb8469-5299-4cda-af25-e4e4bb7a7eed)
+
 #### THANK YOU
